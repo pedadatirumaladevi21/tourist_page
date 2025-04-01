@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tharushma</title>
+    <style>
+        body {
+            font-family:  sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        .navbar {
+            background: #FFD700; 
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .navbar a {
+            color: black;
+            text-decoration: none;
+            padding: 12px 20px;
+            margin: 0 10px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .navbar a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+        .content {
+            padding: 60px 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .content h1 {
+            font-size: 40px;
+            font-family: 'Cursive', fantasy;
+        }
+        .content p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .contact-form {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            width: 80%;
+            max-width: 500px;
+        }
+        .contact-form input, .contact-form textarea {
+            padding: 10px;
+            margin: 5px;
+            width: 90%;
+            border: none;
+            border-radius: 5px;
+            display: block;
+            text-align: center;
+        }
+        .contact-form button {
+            background: #FFD700;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    
+    <div class="content">
+        <h1>Contact Us</h1>
+        <p>If you have any questions or need assistance, feel free to reach out to us.</p>
+        
+        <div class="contact-form">
+            <input type="text" placeholder="Your Name"><br>
+            <input type="email" placeholder="Your Email"><br>
+            <textarea placeholder="Your Message" rows="4"></textarea><br>
+            <button onclick="message()">Send Message</button>
+        </div>
+    </div>
+
+    <script>
+        function message() {
+            alert('Your message has been sent successfully');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tharushma</title>
+    <style>
+        body {
+            font-family:  sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        .navbar {
+            background: #FFD700; 
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .navbar a {
+            color: black;
+            text-decoration: none;
+            padding: 12px 20px;
+            margin: 0 10px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .navbar a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+        .content {
+            padding: 60px 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .content h1 {
+            font-size: 40px;
+            font-family: 'Cursive', fantasy;
+        }
+        .content p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./services.html">Services</a>
+        <a href="./contact.html">Contact</a>
+    </div>
+    <div class="content">
+        <h1>About This Website</h1>
+        <p>Welcome to our travel guide featuring some of the most famous tourist destinations in India. This website provides information on historical sites, beautiful landscapes, and cultural hotspots that attract visitors from all over the world.</p>
+    </div>
+  <div class="content">
+        <button onclick="toggleInfo()" style="background:#FFD700; color:black; padding:10px 20px; border:none; cursor:pointer; font-size:18px; margin-top:20px;">Learn More</button>
+        <div id="extraInfo" style="display:none; margin-top:20px;">
+            <p>India is home to many breathtaking tourist destinations, ranging from the serene backwaters of Kerala to the majestic forts of Rajasthan. The country boasts a rich cultural heritage, with places like the Taj Mahal, Jaipur’s palaces, 
+                and the temples of Varanasi offering a glimpse into India's glorious past. Whether you're seeking adventure in the Himalayas, relaxation on Goa's beaches, or a spiritual journey in Rishikesh, India has something for everyone.</p>
+        </div>
+    </div>
+  <script>
+        function toggleInfo() {
+            var info = document.getElementById('extraInfo');
+            info.style.display = (info.style.display === 'none' || info.style.display === '') ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>
+
+    

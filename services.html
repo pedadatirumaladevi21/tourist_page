@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tharushma</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        .navbar {
+            background: #FFD700; 
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .navbar a {
+            color: black;
+            text-decoration: none;
+            padding: 12px 20px;
+            margin: 0 10px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .navbar a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+        .content {
+            padding: 60px 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .content h1 {
+            font-size: 40px;
+            font-family: 'Cursive', fantasy;
+        }
+        .content p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .button {
+            background: #FFD700;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        .hidden {
+            display: none;
+        }
+        .login {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        .login input {
+            padding: 10px;
+            margin: 5px;
+            width: 80%;
+            border: none;
+            border-radius: 5px;
+        }
+        .login button {
+            background: #FFD700;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="./services.html">Services</a>
+        <a href="./contact.html">Contact</a>
+    </div>
+    
+    <div class="content">
+        <h1>Our Services</h1>
+        <p>We offer a range of travel-related services to make your journey across India hassle-free and enjoyable.</p>
+        
+        <button class="button" onclick="accessServices()">Access Our Services</button>
+        <div id="loginForm" class="hidden">
+            <div class="login">
+                <p>Please login to access our services:</p>
+                <input type="text" placeholder="Username"><br>
+                <input type="password" placeholder="Password"><br>
+                <button>Login</button>
+                <p>Don't have an account? <a href="#" style="color:#FFD700;">Sign up</a></p>
+            </div>
+        </div>
+
+        <button class="button" onclick="tharushma()">View Services</button>
+        <div id="serviceDetails" class="hidden">
+            <ul style="list-style: none; padding: 0;">
+               
+                <li> Hotel & Resort Bookings</li>
+                <li> Flight & Train Ticket Bookings</li>
+                <li>Guided Sightseeing Tours</li>
+                
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function tharushma() {
+            var details = document.getElementById('serviceDetails');
+            details.classList.toggle('hidden');
+        }
+        function accessServices() {
+            var loginForm = document.getElementById('loginForm');
+            loginForm.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
